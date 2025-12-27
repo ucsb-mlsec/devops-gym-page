@@ -6,11 +6,11 @@
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description"
-    content="CyberGym is a large-scale, high-quality cybersecurity evaluation framework designed to rigorously assess the capabilities of AI agents on real-world vulnerability analysis tasks. CyberGym includes 1,507 historical vulnerabilities from 188 large software projects." />
+    content="DevOps-Gym is the first end-to-end benchmark for evaluating AI agents across core DevOps workflows: build and configuration, monitoring, issue resolving, and test generation. DevOps-Gym includes 700+ real-world tasks collected from 30+ projects in Java and Go." />
   <meta property="og:title"
-    content="CyberGym: Evaluating AI Agents' Real-World Cybersecurity Capabilities at Scale" />
+    content="DevOps-Gym: Benchmarking AI Agents in Software DevOps Cycle" />
   <meta property="og:description"
-    content="CyberGym is a large-scale, high-quality cybersecurity evaluation framework designed to rigorously assess the capabilities of AI agents on real-world vulnerability analysis tasks. CyberGym includes 1,507 historical vulnerabilities from 188 large software projects." />
+    content="DevOps-Gym is the first end-to-end benchmark for evaluating AI agents across core DevOps workflows: build and configuration, monitoring, issue resolving, and test generation. DevOps-Gym includes 700+ real-world tasks collected from 30+ projects in Java and Go." />
   <meta property="og:url" content="cybergym.io" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="https://cybergym.io/assets/images/banner.png" />
@@ -18,18 +18,18 @@
   <meta property="og:image:height" content="630" />
 
   <meta name="twitter:title"
-    content="CyberGym: Evaluating AI Agents' Real-World Cybersecurity Capabilities at Scale" />
+    content="DevOps-Gym: Benchmarking AI Agents in Software DevOps Cycle" />
   <meta name="twitter:description"
-    content="CyberGym is a large-scale, high-quality cybersecurity evaluation framework designed to rigorously assess the capabilities of AI agents on real-world vulnerability analysis tasks. CyberGym includes 1,507 historical vulnerabilities from 188 large software projects." />
+    content="DevOps-Gym is the first end-to-end benchmark for evaluating AI agents across core DevOps workflows: build and configuration, monitoring, issue resolving, and test generation. DevOps-Gym includes 700+ real-world tasks collected from 30+ projects in Java and Go." />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="https://cybergym.io/assets/images/banner.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="cybersecurity, CyberGym, large language model, agent, LLM" />
+  <meta name="keywords" content="DevOps, DevOps-Gym, large language model, agent, LLM, software engineering, benchmark" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>CyberGym</title>
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+  <title>DevOps-Gym</title>
+  <link rel="icon" type="image/png" href="assets/images/devops.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -55,41 +55,56 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">
-              <img src="assets/images/favicon.ico" class="publication-logo" />
+              <img src="assets/images/devops.png" class="publication-logo" />
               <span style="vertical-align: middle; font-weight: 600">
-                CyberGym
+                DevOps-Gym
               </span>
               <br />
               <span style="font-size: 2.5rem">
-                Evaluating AI Agents' Real-World Cybersecurity Capabilities at Scale
+                Benchmarking AI Agents in Software DevOps Cycle
               </span>
             </h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                Zhun Wang<sup>*
-                  <a href="mailto:zhun.wang@berkeley.edu" class="email-link">
+                Yuheng Tang<sup>*,1
+                  <a href="mailto:tangken333@gmail.com" class="email-link">
                     <i class="hgi hgi-stroke hgi-mail-01"></i>
                   </a>
                 </sup>
                 ,
               </span>
               <span class="author-block">
-                Tianneng Shi<sup>*
-                  <a href="mailto:stneng@berkeley.edu" class="email-link">
+                Kaijie Zhu<sup>*,1
+                  <a href="mailto:kaijiezhu@ucsb.edu" class="email-link">
                     <i class="hgi hgi-stroke hgi-mail-01"></i>
                   </a>
                 </sup>
                 ,
               </span>
-              <span class="author-block"> Jingxuan He,</span>
-              <span class="author-block"> Matthew Cai,</span>
-              <span class="author-block"> Jialin Zhang,</span>
-              <span class="author-block"> Dawn Song</span>
+              <span class="author-block"> Bonan Ruan<sup>2</sup>,</span>
+              <span class="author-block"> Chuqi Zhang<sup>2</sup>,</span>
+              <span class="author-block"> Michael Yang<sup>1</sup>,</span>
+              <span class="author-block"> Hongwei Li<sup>1</sup>,</span>
+              <span class="author-block"> Suyue Guo<sup>1</sup>,</span>
+              <span class="author-block"> Tianneng Shi<sup>3</sup>,</span>
+              <span class="author-block"> Zekun Li<sup>4</sup>,</span>
+              <span class="author-block"> Christopher Kruegel<sup>1</sup>,</span>
+              <span class="author-block"> Giovanni Vigna<sup>1</sup>,</span>
+              <span class="author-block"> Dawn Song<sup>3</sup>,</span>
+              <span class="author-block"> William Yang Wang<sup>1</sup>,</span>
+              <span class="author-block"> Lun Wang<sup>4</sup>,</span>
+              <span class="author-block"> Yangruibo Ding<sup>5</sup>,</span>
+              <span class="author-block"> Zhenkai Liang<sup>2</sup>,</span>
+              <span class="author-block"> Wenbo Guo<sup>1</sup></span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">UC Berkeley</span>
+              <span class="author-block"><sup>1</sup>UCSB,</span>
+              <span class="author-block"><sup>2</sup>NUS,</span>
+              <span class="author-block"><sup>3</sup>UCB,</span>
+              <span class="author-block"><sup>4</sup>Google DeepMind,</span>
+              <span class="author-block"><sup>5</sup>UCLA</span>
               <span class="eql-cntrb"><small><br /><sup>*</sup>Indicates Equal
                   Contribution</small></span>
             </div>
@@ -97,12 +112,9 @@
               <div class="column is-four-fifths">
                 <div class="content has-text-justified">
                   <p>
-                    A large-scale, high-quality cybersecurity evaluation
-                    framework designed to rigorously assess the capabilities
-                    of AI agents on real-world vulnerability analysis tasks.
-                    CyberGym includes 1,507 benchmark instances with
-                    historical vulnerabilities from 188 large software
-                    projects.
+                    The first end-to-end benchmark for evaluating AI agents across core DevOps workflows: 
+                    build and configuration, monitoring, issue resolving, and test generation. 
+                    DevOps-Gym includes 700+ real-world tasks collected from 30+ projects in Java and Go.
                   </p>
                 </div>
               </div>
@@ -157,25 +169,9 @@
                   </a>
                 </span>
 
-                <!-- Blog link -->
-                <span class="link-block">
-                  <a href="https://rdi.berkeley.edu/blog/cybergym/" target="_blank"
-                    class="external-link button is-normal">
-                    <span>Blog</span>
-                    <span class="icon" style="font-size: 1.4rem">
-                      <i class="hgi hgi-stroke hgi-notebook-02"></i>
-                    </span>
-                  </a>
-                </span>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="columns is-centered" style="margin-top: 2rem;">
-        <div class="column is-four-fifths">
-          <img src="assets/images/time_vs_success.png" alt="leaderboard-image"
-            class="leaderboard-image" />
         </div>
       </div>
     </div>
@@ -189,30 +185,20 @@
             <h2 class="title is-3">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                Large language model (LLM) agents are becoming increasingly
-                skilled at handling cybersecurity tasks autonomously. Thoroughly
-                assessing their cybersecurity capabilities is critical and
-                urgent, given the high stakes in this domain. However, existing
-                benchmarks fall short, often failing to capture real-world
-                scenarios or being limited in scope. To address this gap, we
-                introduce CyberGym, a large-scale and high-quality cybersecurity
-                evaluation framework featuring 1,507 real-world vulnerabilities
-                found and patched across 188 large software projects. While it
-                includes tasks of various settings, CyberGym primarily focuses
-                on the generation of proof-of-concept (PoC) tests for
-                vulnerability reproduction, based on text descriptions and
-                corresponding source repositories. Solving this task is
-                particularly challenging, as it requires comprehensive reasoning
-                across entire codebases to locate relevant code fragments and
-                produce effective PoCs that accurately trigger the target
-                vulnerability starting from the program's entry point. Our
-                evaluation across 4 state-of-the-art agent frameworks and 9 LLMs
-                reveals that even the best combination (OpenHands and
-                Claude-3.7-Sonnet) achieves only a 11.9% reproduction success
-                rate, mainly on simpler cases. Beyond reproducing historical
-                vulnerabilities, we find that PoCs generated by LLM agents can
-                reveal new vulnerabilities, identifying 15 zero-days affecting
-                the latest versions of the software projects.
+                Even though demonstrating extraordinary capabilities in code generation and software issue resolving, 
+                AI agents' capabilities in the full software DevOps cycle are still unknown. Different from pure 
+                code generation, handling the DevOps cycle in real-world software, including developing, deploying, 
+                and managing, requires analyzing large-scale projects, understanding dynamic program behaviors, 
+                leveraging domain-specific tools, and making sequential decisions. However, existing benchmarks focus 
+                on isolated problems and lack environments and tool interfaces for DevOps. We introduce DevOps-Gym, 
+                the first end-to-end benchmark for evaluating AI agents across core DevOps workflows: build and 
+                configuration, monitoring, issue resolving, and test generation. DevOps-Gym includes 700+ real-world 
+                tasks collected from 30+ projects in Java and Go. We develop a semi-automated data collection mechanism 
+                with rigorous and non-trivial expert efforts in ensuring the task coverage and quality. Our evaluation 
+                of state-of-the-art models and agents reveals fundamental limitations: they struggle with issue resolving 
+                and test generation in Java and Go, and remain unable to handle new tasks such as monitoring and build 
+                and configuration. These results highlight the need for essential research in automating the full DevOps 
+                cycle with AI agents.
               </p>
             </div>
           </div>
@@ -228,15 +214,6 @@
         <div class="column is-full">
           <h2 class="title is-3">Leaderboard</h2>
 
-          <!-- Filter Controls -->
-          <div style="margin-bottom: 1.5rem; text-align: left;">
-            <span style="font-size: 0.9rem; margin-right: 0.5rem;">Filters:</span>
-            <div class="select is-small" style="display: inline-block;">
-              <select id="trials-filter" class="filter-select">
-                <option value="all">All Trials</option>
-              </select>
-            </div>
-          </div>
 
           <!-- Level 1 Tab Content -->
           <div id="level1" class="tab-content is-active">
@@ -246,17 +223,17 @@
                   <tr>
                     <th style="vertical-align: middle">Rank</th>
                     <th style="vertical-align: middle">Agent</th>
-                    <th style="vertical-align: middle">Trials</th>
-                    <th style="vertical-align: middle">
-                      Success Rate (%)
-                    </th>
-                    <th style="vertical-align: middle">Date</th>
-                    <th style="vertical-align: middle">Source</th>
+                    <th style="vertical-align: middle">Model</th>
+                    <th style="vertical-align: middle">Build & Config (%)</th>
+                    <th style="vertical-align: middle">Monitoring (%)</th>
+                    <th style="vertical-align: middle">Issue Resolving (%)</th>
+                    <th style="vertical-align: middle">Test Generation (%)</th>
+                    <th style="vertical-align: middle">Overall (%)</th>
                   </tr>
                 </thead>
                 <tbody id="level1-tbody">
                   <tr>
-                    <td colspan="6" class="has-text-centered">Loading...</td>
+                    <td colspan="8" class="has-text-centered">Loading...</td>
                   </tr>
                 </tbody>
               </table>
@@ -267,29 +244,15 @@
           <div class="content has-text-left"
             style="margin-top: 2rem; font-size: 0.9rem; color: #666">
             <p>
-              The leaderboard ranks agent performance on CyberGym Level 1,
-              where agents receive a vulnerability description and unpatched
-              codebase. Agents are evaluated based on their ability to
-              reproduce target vulnerabilities by generating working PoCs. <br />
+              The leaderboard shows evaluation results on DevOps-Gym for different agent frameworks and LLMs. 
+              Results are sorted by Overall Accuracy (average of the four stages). The best result for each stage is marked in <strong>bold</strong>. <br />
             </p>
             <p>
-              • <strong>% Target Vuln. Reproduced:</strong> Percentage of
-              instances where the agent successfully reproduces the target
-              vulnerabilities by generating working PoC<br />
-              • <strong>Trials:</strong> Number of attempts per instance. An instance is considered
-              successful if any one trial succeeds<br />
-            </p>
-            <p>
-              Given the promising capabilities of the agents, we further
-              assess whether their PoCs that can crash the post-patch
-              executable are also able to crash the latest version of the
-              project. In addition, we conduct an experiment in which the
-              agents analyze the latest codebase without any prior context to
-              identify new vulnerabilities. Remarkably, the agents discovered
-              <strong>35 zero-day</strong> vulnerabilities and <strong>17 historically incomplete
-                patches</strong> in total, which are detailed in
-              <a href="#zero-days">this section</a>.
-              <br />
+              • <strong>Build & Config:</strong> Success rate on build and configuration tasks<br />
+              • <strong>Monitoring:</strong> Success rate on monitoring tasks<br />
+              • <strong>Issue Resolving:</strong> Success rate on issue resolving tasks<br />
+              • <strong>Test Generation:</strong> Success rate on test generation tasks<br />
+              • <strong>Overall:</strong> Average accuracy across all four stages, calculated as (Build & Config + Monitoring + Issue Resolving + Test Generation) / 4<br />
             </p>
           </div>
         </div>
@@ -298,117 +261,93 @@
   </section>
   <!-- End leaderboard section -->
 
-  <!-- Overview -->
+  <!-- Overview and Task Categories -->
   <section class="section hero is-light">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Overview of CyberGym</h2>
+          <h2 class="title is-3">Overview of DevOps-Gym</h2>
           <div class="content has-text-justified">
             <p>
-              CyberGym tests AI agents' ability to handle real-world
-              cybersecurity tasks.
+              DevOps-Gym is the first end-to-end benchmark for evaluating AI agents across core DevOps workflows: 
+              build and configuration, monitoring, issue resolving, and test generation. It includes 700+ real-world 
+              tasks from 30+ projects in Java and Go, collected through a semi-automated mechanism with rigorous 
+              expert validation.
             </p>
-            <p>
-              We collect 1,507 benchmark instances by systematically gathering
-              real-world vulnerabilities discovered and patched across 188
-              widely distributed and large-scale software projects. Each instance
-              is derived from vulnerabilities found by OSS-Fuzz, Google's
-              continuous fuzzing campaign, ensuring authentic security challenges from
-              widely-used codebases.
-            </p>
-            <img src="assets/images/overview.png" alt="CyberGym Overview" class="overview-image"
+            <img src="assets/images/overview.png" alt="DevOps-Gym Overview" class="overview-image"
               style="padding-bottom: 1rem" />
-            <p>
-              <strong>Benchmarking with Vulnerability Reproduction.</strong>
-              CyberGym creates evaluation environments with target repositories at pre-patch commit
-              states. Agents receive a vulnerability description and unpatched codebase, then must
-              generate proof-of-concept (PoC) tests that reproduce the vulnerability by reasoning
-              across entire codebases, often spanning thousands of files and millions of lines of
-              code. It requires agents to locate relevant code fragments and produce effective PoCs
-              that trigger vulnerabilities from program entry points. Agents iteratively refine PoCs
-              based on execution feedback. Success is determined by verifying the PoC triggers on
-              the pre-patch version but not on the post-patch version.
-              <!-- Per instance, we construct evaluation environments with the
-              target repository at the pre-patch commit state. The primary
-              task requires agents to generate proof-of-concept (PoC) tests
-              that can reproduce the described vulnerability by reasoning
-              across entire codebases, often spanning thousands of files and
-              millions of lines of code. Agents must locate relevant code
-              fragments and produce effective PoCs that trigger
-              vulnerabilities from program entry points.Beyond vulnerability
-              reproduction, CyberGym supports varied task difficulty levels
-              reflecting different stages of the vulnerability lifecycle,
-              including vulnerability discovery given only the codebase, and
-              vulnerability analysis using patch information to simulate
-              real-world one-day analysis conditions.
-              CyberGym evaluation works as follows. Per task instance, an AI
-              agent receives a vulnerability description and the corresponding
-              unpatched codebase. The agent should generate a PoC test to
-              reproduce the vulnerability, with iterative refinement based on
-              execution feedback. Success is determined by running the PoC on
-              both pre-patch (should trigger) and post-patch (should not
-              trigger) program versions. -->
-            </p>
-            <p>
-              <strong>Open-Ended Vulnerability Discovery.</strong>
-              CyberGym also conducts comprehensive analyses of open-ended vulnerability discovery
-              scenarios that extend beyond static benchmarking. We deploy agents to analyze the
-              latest codebases without prior knowledge of existing vulnerabilities. Agents are
-              challenged to generate PoCs to probe for potential vulnerabilities, which are then
-              validated against the latest software versions with sanitizers enabled. This setup
-              mirrors real-world vulnerability discovery, enabling the identification of
-              previously unknown vulnerabilities.
-            </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Zero-Day Vulnerabilities -->
-  <section class="section hero" id="zero-days">
-    <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-full">
-          <h2 class="title is-3">CyberGym's Real-World Security Impact</h2>
+          <h2 class="title is-3">Task Categories</h2>
           <div class="columns is-centered">
             <div class="column is-four-fifths">
               <div class="content has-text-justified">
+                <h3 class="title is-4" style="margin-top: 1.5rem;">Build and Configuration</h3>
                 <p>
-                  Beyond benchmarking, CyberGym demonstrates tangible real-world value: the agents
-                  not only reproduced known vulnerabilities but also <em>uncovered incomplete
-                    patches</em> and <em>previously unknown zero-day bugs.</em>
+                  We evaluate two categories of challenges:
+                </p>
+                <ul>
+                  <li><strong>Repair tasks:</strong> Address five prevalent error types: dependency version conflicts, 
+                    build misconfiguration, compilation errors, tool-chain mismatches, and dependency resource unavailability. 
+                    Agents must diagnose build failures, identify root causes, and apply targeted fixes.</li>
+                  <li><strong>Implementation tasks:</strong> Incorporate new functionalities including build system migration 
+                    (e.g., Maven to Gradle), target release, plugin integration, and dependency version upgrades.</li>
+                </ul>
+                <p>
+                  <strong>Input:</strong> Repository with failing build configuration (repair) or specification for new build setup (implementation); 
+                  terminal access with build tools (Maven, Gradle, npm), text utilities, and package managers.<br />
+                  <strong>Output:</strong> For repair tasks: patch (diff format) fixing build failure; 
+                  for implementation tasks: complete configuration files meeting specifications.<br />
+                  <strong>Evaluation:</strong> Build process executes without errors and built artifacts pass dedicated test cases.
+                </p>
+
+                <h3 class="title is-4" style="margin-top: 1.5rem;">Monitoring</h3>
+                <p>
+                  Monitoring tasks require agents to capture runtime execution and system states using command-line tools, 
+                  and detect performance and resource utilization anomalies. We focus on performance and resource anomalies 
+                  rather than immediate crashes, as they require careful analysis to uncover. We consider two types:
+                </p>
+                <ul>
+                  <li><strong>Resource usage problems:</strong> Memory leaks, disk leaks, system handle exhaustion, and CPU spikes 
+                    that gradually degrade system reliability.</li>
+                  <li><strong>Performance degradations:</strong> I/O bottlenecks and inefficient SQL query handling that degrade 
+                    user experience without causing immediate failures.</li>
+                </ul>
+                <p>
+                  <strong>Input:</strong> Containerized environment running an application with bugs; terminal access 
+                  (top, free, ps, netstat) with no access to source code, configuration files, or trigger scripts.<br />
+                  <strong>Output:</strong> Structured diagnostic report: specific issue type (e.g., memory_leak) and supporting 
+                  evidence with quantitative metrics (e.g., memory growth rate, affected process ID).<br />
+                  <strong>Evaluation:</strong> Binary accuracy requiring agents to correctly identify the specific type of anomaly.
+                </p>
+
+                <h3 class="title is-4" style="margin-top: 1.5rem;">Issue Resolving</h3>
+                <p>
+                  Issue resolving requires agents to translate bug descriptions into code fixes, following established 
+                  methodologies similar to SWE-bench. Agents receive buggy repositories with natural language descriptions 
+                  and must generate patches that pass fail-to-pass test transitions.
                 </p>
                 <p>
-                  <strong>PoCs Generated for CyberGym Reveal Incomplete Patches.</strong>
-                  During evaluation, some generated proof-of-concepts (PoCs) unexpectedly caused
-                  crashes even on <em>patched</em> versions of programs, suggesting that certain
-                  fixes were only partial. Out of all generated PoCs, 759 triggered crashes across
-                  60 projects, and manual inspection confirmed <em>17 cases of incomplete patches
-                    spanning 15 projects</em>. While none of these affected the latest software
-                  releases, the results show that AI-generated PoCs can help identify flaws in
-                  existing security patches that might otherwise go unnoticed.
+                  <strong>Input:</strong> Buggy repository with natural language bug description.<br />
+                  <strong>Output:</strong> Patch (diff format) that fixes the issue.<br />
+                  <strong>Evaluation:</strong> Patches must pass fail-to-pass test transitions, ensuring the fix resolves 
+                  the described issue and maintains existing functionality.
+                </p>
+
+                <h3 class="title is-4" style="margin-top: 1.5rem;">Test Generation</h3>
+                <p>
+                  Test generation requires agents to create regression tests based on bug descriptions to prevent issue 
+                  recurrence and ensure functionality correctness. This task is more challenging than issue resolving, as 
+                  it requires reasoning about runtime behavior and how bugs would be triggered during execution.
                 </p>
                 <p>
-                  <strong>PoCs Generated for CyberGym Reveal Zero-Day Vulnerabilities.</strong>
-                  Further validation of those post-patch crashes revealed 35 PoCs that still crashed
-                  the latest versions of their programs. After deduplication and analysis, these
-                  corresponded to <em>10 unique, previously unknown zero-day vulnerabilities</em>,
-                  each persisting for an average of <em>969 days</em> before discovery.
-                </p>
-                <p>
-                  <strong>Running Agentic Vulnerability Discovery at Scale.</strong>
-                  To test open-ended discovery, we ran OpenHands with GPT-4.1 and GPT-5 given only
-                  the latest codebases across <em>431 OSS-Fuzz projects</em> with <em>1,748
-                    executables</em>.
-                  GPT-4.1 triggered <em>16 crashes</em>, leading to <em>7 confirmed zero-days</em>.
-                  GPT-5 triggered <em>56 crashes</em>, yielding <em>22 confirmed zero-days</em>,
-                  with 4 overlapping between the two models.
-                  These results confirm that modern LLM agents can autonomously discover new
-                  vulnerabilities at scale, and that performance on CyberGym correlates strongly
-                  with real-world vulnerability discovery capability.
-                  <!-- All findings were responsibly disclosed, resulting in <strong>3 assigned CVEs</strong> and <strong>6 patched vulnerabilities</strong> to date. -->
+                  <strong>Input:</strong> Bug description and repository context.<br />
+                  <strong>Output:</strong> Regression test that reproduces the described failure and validates patch correctness.<br />
+                  <strong>Evaluation:</strong> Generated tests must precisely reproduce the failure described in the issue 
+                  and subsequently pass on the patched code.
                 </p>
               </div>
             </div>
@@ -418,30 +357,74 @@
     </div>
   </section>
 
-  <!-- Key Findings -->
+  <!-- Key Results -->
+  <section class="section hero is-light" id="key-results">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <h2 class="title is-3">Key Results</h2>
+          <div class="columns is-centered">
+            <div class="column is-four-fifths">
+              <div class="content has-text-justified">
+                <h3 class="title is-4" style="margin-top: 1.5rem;">Cross-tool Builds and Configurations Present New Challenges</h3>
+                <p>
+                  All models perform poorly in build implementation tasks, especially in migration tasks. Agents struggle with understanding the internal mechanisms of build tools like Maven and goreleaser, as well as their practical usage patterns in real-world projects. This is fundamentally different from fixing a bug in source code, where the context is more self-contained. This result demonstrates that while agents are improving at manipulating source code, they are far from capable of managing the software's build and deployment environment.
+                </p>
+
+                <h3 class="title is-4" style="margin-top: 1.5rem;">The Dynamic Nature of System Monitoring Reveals Critical Agent Failures</h3>
+                <p>
+                  Agents perform exceptionally poorly on monitoring tasks, even reporting 0% with some state-of-the-art models. This failure stems from three fundamental challenges: (1) monitoring requires continuous processing of evolving system state information, exhausting context limits quickly; (2) agents struggle to consistently focus on monitoring, becoming distracted by earlier observations and stopping active monitoring; (3) agents exhibit poor baseline discrimination, generating false positives by misinterpreting normal operational variance as anomalies. These monitoring failures reveal that current agents lack the temporal reasoning and sustained attention mechanisms essential for dynamic system observation.
+                </p>
+
+                <h3 class="title is-4" style="margin-top: 1.5rem;">Unlike SWE-Bench, LLM Agents Perform Poorly on DevOps-Gym for Issue Resolving</h3>
+                <p>
+                  The resolve rate drops significantly when moving from Python repositories (SWE-Bench) to Java and Go. Using the same agent and model combination (OpenHands + Claude-4-Sonnet), the resolving rate achieves 70.4% on SWE-Bench-Verified, yet drops dramatically to 23.87% on our benchmark. This indicates that existing LLMs struggle with the cross-language capability gap, likely due to the dominance of Python code in training data. Complex compilation processes, dependency management, and environment configuration in Java and Go pose major challenges that even newer models fail to overcome.
+                </p>
+
+                <h3 class="title is-4" style="margin-top: 1.5rem;">Generating High-Quality Tests is Even More Challenging Than Resolving Issues</h3>
+                <p>
+                  When using the exact same set of issues for evaluation, the accuracy of generating high-quality tests is notably lower than the issue resolving rate. Test generation requires agents to not only have a static understanding of the repository but also dynamic analysis capabilities to reason about how bugs would be triggered during execution. The agent must also reason about how the bug might be resolved, so that generated tests can both reproduce the failure and validate the patch correctness. In contrast, generating a patch can sometimes be accomplished through more straightforward, static code analysis. These results suggest that while agents are becoming proficient at predicting coding patterns, reasoning about runtime behavior remains significantly more challenging.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Error Analysis -->
   <section class="section hero is-light">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-full">
-          <h2 class="title is-3">More Key Findings</h2>
+          <h2 class="title is-3">Detailed Error Analysis</h2>
           <div class="columns is-centered">
             <div class="column is-four-fifths">
               <div class="content has-text-justified">
-                <p>
-                  In addition to the scores shown in the leaderboard, our
-                  comprehensive evaluation reveals several critical insights
-                  into the current capabilities of AI agents in cybersecurity.
-                </p>
+                <h3 class="title is-4" style="margin-top: 1.5rem;">Build and Configuration Tasks</h3>
+                <ul>
+                  <li><strong>Toolchain and environment limitations (33%):</strong> Agents cannot validate or inspect configuration artifacts due to missing validators or schema checkers. Examples include unused-import violations, missing-dependency errors, and malformed build files.</li>
+                  <li><strong>Multi-step reasoning failures (23%):</strong> Agents often resolve initial errors but lose track of remaining issues, revealing limitations in context retention and iterative "fix-run-verify" loops.</li>
+                  <li><strong>Domain-specific knowledge gaps (37%):</strong> Failures reflect genuine domain knowledge requirements exceeding current capabilities, such as Maven-to-Gradle migrations requiring understanding of build-system semantics, dependency resolution, and platform-specific constraints. Notably, 17% of failures are "inherently difficult," confirming the benchmark captures real-world, high-difficulty scenarios.</li>
+                </ul>
+
+                <h3 class="title is-4" style="margin-top: 1.5rem;">Monitoring Tasks</h3>
+                <ul>
+                  <li><strong>Inadequate methodology (37%):</strong> Agents used one-time commands (e.g., <code>top</code>) instead of continuous monitoring (e.g., <code>watch -n 1</code>).</li>
+                  <li><strong>Premature conclusion (26%):</strong> Agents submitted answers without performing monitoring or completing diagnostic procedures.</li>
+                  <li><strong>Insufficient temporal granularity (11%):</strong> Agents used overly coarse sampling intervals (10-60s), missing transient anomalies like CPU spikes.</li>
+                  <li><strong>Interpretation failure (26%):</strong> Agents collected metrics correctly but failed to analyze them accurately.</li>
+                </ul>
               </div>
             </div>
           </div>
-          <div id="key-findings-carousel"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section hero">
+  <!-- <section class="section hero">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-full">
@@ -450,12 +433,10 @@
             <div class="column is-four-fifths">
               <div class="content has-text-justified">
                 <p>
-                  An example where the agent successfully reproduces the
-                  target vulnerability based on the provided description and
-                  codebase. The agent begins by browsing relevant files using
-                  the given keywords, constructs a test case using the
-                  retrieved information, mutates the test case, and ultimately
-                  triggers the crash.
+                  An example where the agent successfully completes a DevOps task. 
+                  The agent analyzes the project structure, understands the requirements, 
+                  leverages appropriate tools, and makes sequential decisions to accomplish 
+                  the task across the full DevOps cycle.
                 </p>
                 <img src="assets/images/case_study.png" alt="Agent Trace Example"
                   class="agent-trace-image" />
@@ -465,7 +446,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!--BibTex citation -->
   <section class="section hero is-light" id="BibTeX">
@@ -473,14 +454,14 @@
       <h2 class="title">Citation</h2>
       <p>If you use this work in your research, please cite the following:</p>
       <div class="bibtex-container">
-        <pre class="bibtex"><code id="bibtex-code">@misc{wang2025cybergym,
-      title={CyberGym: Evaluating AI Agents' Real-World Cybersecurity Capabilities at Scale}, 
-      author={Zhun Wang and Tianneng Shi and Jingxuan He and Matthew Cai and Jialin Zhang and Dawn Song},
+        <pre class="bibtex"><code id="bibtex-code">@misc{devopsgym2025,
+      title={DevOps-Gym: Benchmarking AI Agents in Software DevOps Cycle}, 
+      author={[Authors]},
       year={2025},
-      eprint={2506.02548},
+      eprint={[arXiv ID]},
       archivePrefix={arXiv},
-      primaryClass={cs.CR},
-      url={https://arxiv.org/abs/2506.02548}, 
+      primaryClass={cs.SE},
+      url={[arXiv URL]}, 
 }</code></pre>
         <button class="copy-bibtex-btn" title="Copy BibTeX" onclick="copyBibtex()">
           <i class="hgi hgi-stroke hgi-copy-01"></i>

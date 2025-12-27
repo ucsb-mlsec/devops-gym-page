@@ -1,196 +1,68 @@
 {
   "level1": [
     {
-      "name": "Claude-Sonnet-4.5",
-      "score_10": 0.667,
-      "date": "2025-09-29",
-      "source": "Anthropic",
-      "source_url": "https://www.anthropic.com/claude-sonnet-4-5-system-card",
-      "trials": 30
+      "agent": "OpenHands",
+      "model": "Qwen3-Coder-30B",
+      "build_config": 20.37,
+      "monitoring": 5.89,
+      "issue_resolving": 13.22,
+      "test_generation": 6.13
     },
     {
-      "name": "Claude-Opus-4.1",
-      "score_10": 0.613,
-      "date": "2025-09-29",
-      "source": "Anthropic",
-      "source_url": "https://www.anthropic.com/claude-sonnet-4-5-system-card",
-      "trials": 30
+      "agent": "OpenHands",
+      "model": "o4-mini",
+      "build_config": 24.07,
+      "monitoring": 8.82,
+      "issue_resolving": 10.32,
+      "test_generation": 8.70
     },
     {
-      "name": "Claude-Sonnet-4",
-      "score_10": 0.595,
-      "date": "2025-09-29",
-      "source": "Anthropic",
-      "source_url": "https://www.anthropic.com/claude-sonnet-4-5-system-card",
-      "trials": 30
+      "agent": "OpenHands",
+      "model": "DeepSeek-V3.1",
+      "build_config": 11.11,
+      "monitoring": 0.00,
+      "issue_resolving": 14.20,
+      "test_generation": 3.22
     },
     {
-      "name": "Claude-Sonnet-3.7",
-      "score_10": 0.472,
-      "date": "2025-09-29",
-      "source": "Anthropic",
-      "source_url": "https://www.anthropic.com/claude-sonnet-4-5-system-card",
-      "trials": 30
+      "agent": "OpenHands",
+      "model": "Gemini-2.5-Pro",
+      "build_config": 16.66,
+      "monitoring": 11.76,
+      "issue_resolving": 10.96,
+      "test_generation": 2.90
     },
     {
-      "name": "Claude-Sonnet-4.5",
-      "score_10": 0.289,
-      "date": "2025-09-29",
-      "source": "Anthropic",
-      "source_url": "https://www.anthropic.com/claude-sonnet-4-5-system-card",
-      "trials": 1
+      "agent": "OpenHands",
+      "model": "Claude-4-Sonnet",
+      "build_config": 42.59,
+      "monitoring": 5.89,
+      "issue_resolving": 23.87,
+      "test_generation": 11.61
     },
     {
-      "name": "Claude-Opus-4.1",
-      "score_10": 0.250,
-      "date": "2025-09-29",
-      "source": "Anthropic",
-      "source_url": "https://www.anthropic.com/claude-sonnet-4-5-system-card",
-      "trials": 1
+      "agent": "mini-SWE-Agent",
+      "model": "Claude-4-Sonnet",
+      "build_config": 29.62,
+      "monitoring": 2.91,
+      "issue_resolving": 5.16,
+      "test_generation": 0.98
     },
     {
-      "name": "Claude-Sonnet-4",
-      "score_10": 0.226,
-      "date": "2025-09-29",
-      "source": "Anthropic",
-      "source_url": "https://www.anthropic.com/claude-sonnet-4-5-system-card",
-      "trials": 1
+      "agent": "Aider",
+      "model": "Claude-4-Sonnet",
+      "build_config": 5.55,
+      "monitoring": 0.00,
+      "issue_resolving": 9.67,
+      "test_generation": 2.25
     },
     {
-      "name": "Claude-Sonnet-3.7",
-      "score_10": 0.145,
-      "date": "2025-09-29",
-      "source": "Anthropic",
-      "source_url": "https://www.anthropic.com/claude-sonnet-4-5-system-card",
-      "trials": 1
-    },
-    {
-      "name": "OpenHands + Claude-Sonnet-4",
-      "score_10": 0.17850033178500332,
-      "score_x1": 0.019907100199071003,
-      "date": "2025-05-23",
-      "source": "CyberGym Team",
-      "trials": 1
-    },
-    {
-      "name": "OpenHands + Claude-Sonnet-3.7",
-      "score_10": 0.11944260119442601,
-      "score_x1": 0.021897810218978103,
-      "date": "2025-05-15",
-      "source": "CyberGym Team",
-      "trials": 1
-    },
-    {
-      "name": "OpenHands + GPT-4.1",
-      "score_10": 0.09356337093563372,
-      "score_x1": 0.012607830126078301,
-      "date": "2025-05-15",
-      "source": "CyberGym Team",
-      "trials": 1
-    },
-    {
-      "name": "Cybench + GPT-4.1",
-      "score_10": 0.08958195089581951,
-      "score_x1": 0.0225613802256138,
-      "date": "2025-05-15",
-      "source": "CyberGym Team",
-      "trials": 1
-    },
-    {
-      "name": "Codex + GPT-4.1",
-      "score_10": 0.07365627073656271,
-      "score_x1": 0.011944260119442602,
-      "date": "2025-05-15",
-      "source": "CyberGym Team",
-      "trials": 1
-    },
-    {
-      "name": "ENiGMA + GPT-4.1",
-      "score_10": 0.07232913072329131,
-      "score_x1": 0.019243530192435302,
-      "date": "2025-05-15",
-      "source": "CyberGym Team",
-      "trials": 1
-    },
-    {
-      "name": "OpenHands + Gemini-2.5-Flash",
-      "score_10": 0.04844061048440611,
-      "score_x1": 0.007962840079628402,
-      "date": "2025-05-15",
-      "source": "CyberGym Team",
-      "trials": 1
-    },
-    {
-      "name": "OpenHands + DeepSeek-V3",
-      "score_10": 0.035832780358327807,
-      "score_x1": 0.006635700066357001,
-      "date": "2025-05-15",
-      "source": "CyberGym Team",
-      "trials": 1
-    },
-    {
-      "name": "OpenHands + o4-mini",
-      "score_10": 0.0245520902455209,
-      "score_x1": 0.0006635700066357001,
-      "date": "2025-05-15",
-      "source": "CyberGym Team",
-      "trials": 1
-    },
-    {
-      "name": "OpenHands + R2E-Gym-32B",
-      "score_10": 0.019907100199071003,
-      "score_x1": 0.005972130059721301,
-      "date": "2025-05-15",
-      "source": "CyberGym Team",
-      "trials": 1
-    },
-    {
-      "name": "OpenHands + Qwen3-235B-A22B",
-      "score_10": 0.0185799601857996,
-      "score_x1": 0.0033178500331785005,
-      "date": "2025-05-15",
-      "source": "CyberGym Team",
-      "trials": 1
-    },
-    {
-      "name": "OpenHands + OpenHands-LM-32B",
-      "score_10": 0.0165892501658925,
-      "score_x1": 0.0033178500331785005,
-      "date": "2025-05-15",
-      "source": "CyberGym Team",
-      "trials": 1
-    },
-    {
-      "name": "OpenHands + SWE-Gym-32B",
-      "score_10": 0.0006635700066357001,
-      "score_x1": 0.0006635700066357001,
-      "date": "2025-05-15",
-      "source": "CyberGym Team",
-      "trials": 1
-    }
-  ],
-  "level0": [
-    {
-      "name": "OpenHands + GPT-4.1",
-      "score_10": 0.034505640345056404,
-      "score_x1": 0.0165892501658925,
-      "date": "2025-05-15"
-    }
-  ],
-  "level2": [
-    {
-      "name": "OpenHands + GPT-4.1",
-      "score_10": 0.13072329130723293,
-      "score_x1": 0.0165892501658925,
-      "date": "2025-05-15"
-    }
-  ],
-  "level3": [
-    {
-      "name": "OpenHands + GPT-4.1",
-      "score_10": 0.1712010617120106,
-      "score_x1": 0.013271400132714002,
-      "date": "2025-05-15"
+      "agent": "Claude Code",
+      "model": "Claude-4-Sonnet",
+      "build_config": 51.85,
+      "monitoring": 20.56,
+      "issue_resolving": 23.87,
+      "test_generation": 13.87
     }
   ]
 }
