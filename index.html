@@ -6,11 +6,11 @@
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description"
-    content="DevOps-Gym is the first end-to-end benchmark for evaluating AI agents across core DevOps workflows: build and configuration, monitoring, issue resolving, and test generation. DevOps-Gym includes 700+ real-world tasks collected from 30+ projects in Java and Go." />
+    content="DevOps-Gym is the first end-to-end benchmark for evaluating AI agents across the whole DevOps cycle: build and configuration, monitoring, issue resolving, and test generation. It focuses on long-horizon tool calling and long context reasoning for agent tasks, with 700+ real-world tasks from 30+ projects in Java and Go." />
   <meta property="og:title"
     content="DevOps-Gym: Benchmarking AI Agents in Software DevOps Cycle" />
   <meta property="og:description"
-    content="DevOps-Gym is the first end-to-end benchmark for evaluating AI agents across core DevOps workflows: build and configuration, monitoring, issue resolving, and test generation. DevOps-Gym includes 700+ real-world tasks collected from 30+ projects in Java and Go." />
+    content="DevOps-Gym is the first end-to-end benchmark for evaluating AI agents across the whole DevOps cycle: build and configuration, monitoring, issue resolving, and test generation. It focuses on long-horizon tool calling and long context reasoning for agent tasks, with 700+ real-world tasks from 30+ projects in Java and Go." />
   <meta property="og:url" content="cybergym.io" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="https://cybergym.io/assets/images/banner.png" />
@@ -20,7 +20,7 @@
   <meta name="twitter:title"
     content="DevOps-Gym: Benchmarking AI Agents in Software DevOps Cycle" />
   <meta name="twitter:description"
-    content="DevOps-Gym is the first end-to-end benchmark for evaluating AI agents across core DevOps workflows: build and configuration, monitoring, issue resolving, and test generation. DevOps-Gym includes 700+ real-world tasks collected from 30+ projects in Java and Go." />
+    content="DevOps-Gym is the first end-to-end benchmark for evaluating AI agents across the whole DevOps cycle: build and configuration, monitoring, issue resolving, and test generation. It focuses on long-horizon tool calling and long context reasoning for agent tasks, with 700+ real-world tasks from 30+ projects in Java and Go." />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="https://cybergym.io/assets/images/banner.png" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -99,12 +99,12 @@
               <span class="author-block"> Wenbo Guo<sup>1</sup></span>
             </div>
 
-            <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>UCSB,</span>
-              <span class="author-block"><sup>2</sup>NUS,</span>
-              <span class="author-block"><sup>3</sup>UCB,</span>
-              <span class="author-block"><sup>4</sup>Google DeepMind,</span>
-              <span class="author-block"><sup>5</sup>UCLA</span>
+            <div class="is-size-5 publication-authors" style="margin-top: 1rem;">
+              <span class="author-block"><sup style="color: #003660; margin-right: 0.3em;">1</sup><span style="color: #003660;">UC Santa Barbara</span>,</span>
+              <span class="author-block"><sup style="color: #003D7C; margin-right: 0.3em;">2</sup><span style="color: #003D7C;">National University of Singapore</span>,</span>
+              <span class="author-block"><sup style="color: #003262; margin-right: 0.3em;">3</sup><span style="color: #003262;">UC Berkeley</span>,</span>
+              <span class="author-block"><sup style="color: #4285F4; margin-right: 0.3em;">4</sup><span style="color: #4285F4;">Google DeepMind</span>,</span>
+              <span class="author-block"><sup style="color: #2774AE; margin-right: 0.3em;">5</sup><span style="color: #2774AE;">UC Los Angeles</span></span>
               <span class="eql-cntrb"><small><br /><sup>*</sup>Indicates Equal
                   Contribution</small></span>
             </div>
@@ -112,9 +112,10 @@
               <div class="column is-four-fifths">
                 <div class="content has-text-justified">
                   <p>
-                    The first end-to-end benchmark for evaluating AI agents across core DevOps workflows: 
+                    The first end-to-end benchmark for evaluating AI agents across the <span style="color: #FF6B6B; font-weight: bold;">whole DevOps cycle</span>: 
                     build and configuration, monitoring, issue resolving, and test generation. 
-                    DevOps-Gym includes 700+ real-world tasks collected from 30+ projects in Java and Go.
+                    DevOps-Gym specifically focuses on <span style="color: #4ECDC4; font-weight: bold;">long-horizon tool calling</span> and <span style="color: #45B7D1; font-weight: bold;">long context reasoning</span> 
+                    capabilities for <span style="color: #FFA07A; font-weight: bold;">agent tasks</span>, featuring 700+ real-world tasks collected from 30+ projects in Java and Go.
                   </p>
                 </div>
               </div>
@@ -269,10 +270,11 @@
           <h2 class="title is-3">Overview of DevOps-Gym</h2>
           <div class="content has-text-justified">
             <p>
-              DevOps-Gym is the first end-to-end benchmark for evaluating AI agents across core DevOps workflows: 
-              build and configuration, monitoring, issue resolving, and test generation. It includes 700+ real-world 
-              tasks from 30+ projects in Java and Go, collected through a semi-automated mechanism with rigorous 
-              expert validation.
+              DevOps-Gym is the first end-to-end benchmark for evaluating AI agents across the <span style="color: #FF6B6B; font-weight: bold;">whole DevOps cycle</span>: 
+              build and configuration, monitoring, issue resolving, and test generation. It specifically focuses on 
+              <span style="color: #4ECDC4; font-weight: bold;">long-horizon tool calling</span> and <span style="color: #45B7D1; font-weight: bold;">long context reasoning</span> capabilities for 
+              <span style="color: #FFA07A; font-weight: bold;">agent tasks</span>, featuring 700+ real-world tasks collected from 30+ projects in Java and Go, 
+              gathered through a semi-automated mechanism with rigorous expert validation.
             </p>
             <img src="assets/images/overview.png" alt="DevOps-Gym Overview" class="overview-image"
               style="padding-bottom: 1rem" />
@@ -287,14 +289,14 @@
               <div class="content has-text-justified">
                 <h3 class="title is-4" style="margin-top: 1.5rem;">Build and Configuration</h3>
                 <p>
-                  We evaluate two categories of challenges:
+                  We evaluate <span style="color: #9B59B6; font-weight: bold;">two categories</span> of challenges:
                 </p>
                 <ul>
-                  <li><strong>Repair tasks:</strong> Address five prevalent error types: dependency version conflicts, 
+                  <li><strong>Repair tasks:</strong> Address <span style="color: #E74C3C; font-weight: bold;">five prevalent error types</span>: dependency version conflicts, 
                     build misconfiguration, compilation errors, tool-chain mismatches, and dependency resource unavailability. 
                     Agents must diagnose build failures, identify root causes, and apply targeted fixes.</li>
-                  <li><strong>Implementation tasks:</strong> Incorporate new functionalities including build system migration 
-                    (e.g., Maven to Gradle), target release, plugin integration, and dependency version upgrades.</li>
+                  <li><strong>Implementation tasks:</strong> Incorporate new functionalities including <span style="color: #3498DB; font-weight: bold;">build system migration 
+                    (e.g., Maven to Gradle), target release, plugin integration, and dependency version upgrades.</span></li>
                 </ul>
                 <p>
                   <strong>Input:</strong> Repository with failing build configuration (repair) or specification for new build setup (implementation); 
@@ -307,8 +309,9 @@
                 <h3 class="title is-4" style="margin-top: 1.5rem;">Monitoring</h3>
                 <p>
                   Monitoring tasks require agents to capture runtime execution and system states using command-line tools, 
-                  and detect performance and resource utilization anomalies. We focus on performance and resource anomalies 
-                  rather than immediate crashes, as they require careful analysis to uncover. We consider two types:
+                  and detect <span style="color: #E67E22; font-weight: bold;">performance and resource utilization anomalies</span>. 
+                  We focus on <span style="color: #E67E22; font-weight: bold;">performance and resource anomalies rather than immediate crashes</span>, 
+                  as they require careful analysis to uncover. We consider <span style="color: #9B59B6; font-weight: bold;">two types</span>:
                 </p>
                 <ul>
                   <li><strong>Resource usage problems:</strong> Memory leaks, disk leaks, system handle exhaustion, and CPU spikes 
@@ -318,7 +321,7 @@
                 </ul>
                 <p>
                   <strong>Input:</strong> Containerized environment running an application with bugs; terminal access 
-                  (top, free, ps, netstat) with no access to source code, configuration files, or trigger scripts.<br />
+                  (top, free, ps, netstat) with <span style="color: #E74C3C; font-weight: bold;">no access to source code</span>, configuration files, or trigger scripts.<br />
                   <strong>Output:</strong> Structured diagnostic report: specific issue type (e.g., memory_leak) and supporting 
                   evidence with quantitative metrics (e.g., memory growth rate, affected process ID).<br />
                   <strong>Evaluation:</strong> Binary accuracy requiring agents to correctly identify the specific type of anomaly.
@@ -328,7 +331,7 @@
                 <p>
                   Issue resolving requires agents to translate bug descriptions into code fixes, following established 
                   methodologies similar to SWE-bench. Agents receive buggy repositories with natural language descriptions 
-                  and must generate patches that pass fail-to-pass test transitions.
+                  and must generate patches that pass <span style="color: #27AE60; font-weight: bold;">fail-to-pass test transitions</span>.
                 </p>
                 <p>
                   <strong>Input:</strong> Buggy repository with natural language bug description.<br />
@@ -340,8 +343,8 @@
                 <h3 class="title is-4" style="margin-top: 1.5rem;">Test Generation</h3>
                 <p>
                   Test generation requires agents to create regression tests based on bug descriptions to prevent issue 
-                  recurrence and ensure functionality correctness. This task is more challenging than issue resolving, as 
-                  it requires reasoning about runtime behavior and how bugs would be triggered during execution.
+                  recurrence and ensure functionality correctness. This task is <span style="color: #E74C3C; font-weight: bold;">more challenging than issue resolving</span>, as 
+                  it requires reasoning about <span style="color: #3498DB; font-weight: bold;">runtime behavior</span> and how bugs would be triggered during execution.
                 </p>
                 <p>
                   <strong>Input:</strong> Bug description and repository context.<br />
@@ -368,22 +371,22 @@
               <div class="content has-text-justified">
                 <h3 class="title is-4" style="margin-top: 1.5rem;">Cross-tool Builds and Configurations Present New Challenges</h3>
                 <p>
-                  All models perform poorly in build implementation tasks, especially in migration tasks. Agents struggle with understanding the internal mechanisms of build tools like Maven and goreleaser, as well as their practical usage patterns in real-world projects. This is fundamentally different from fixing a bug in source code, where the context is more self-contained. This result demonstrates that while agents are improving at manipulating source code, they are far from capable of managing the software's build and deployment environment.
+                  All models perform poorly in build implementation tasks, especially in <span style="color: #E74C3C; font-weight: bold;">migration tasks</span>. Agents struggle with understanding the internal mechanisms of build tools like Maven and goreleaser, as well as their practical usage patterns in real-world projects. This is <span style="color: #9B59B6; font-weight: bold;">fundamentally different from fixing a bug in source code</span>, where the context is more self-contained. This result demonstrates that while agents are improving at manipulating source code, they are <span style="color: #E74C3C; font-weight: bold;">far from capable of managing the software's build and deployment environment</span>.
                 </p>
 
                 <h3 class="title is-4" style="margin-top: 1.5rem;">The Dynamic Nature of System Monitoring Reveals Critical Agent Failures</h3>
                 <p>
-                  Agents perform exceptionally poorly on monitoring tasks, even reporting 0% with some state-of-the-art models. This failure stems from three fundamental challenges: (1) monitoring requires continuous processing of evolving system state information, exhausting context limits quickly; (2) agents struggle to consistently focus on monitoring, becoming distracted by earlier observations and stopping active monitoring; (3) agents exhibit poor baseline discrimination, generating false positives by misinterpreting normal operational variance as anomalies. These monitoring failures reveal that current agents lack the temporal reasoning and sustained attention mechanisms essential for dynamic system observation.
+                  Agents perform exceptionally poorly on monitoring tasks, even reporting <span style="color: #E74C3C; font-weight: bold;">0% with some state-of-the-art models</span>. This failure stems from <span style="color: #9B59B6; font-weight: bold;">three fundamental challenges</span>: (1) monitoring requires continuous processing of evolving system state information, exhausting context limits quickly; (2) agents struggle to consistently focus on monitoring, becoming distracted by earlier observations and stopping active monitoring; (3) agents exhibit poor baseline discrimination, generating false positives by misinterpreting normal operational variance as anomalies. These monitoring failures reveal that current agents lack the <span style="color: #3498DB; font-weight: bold;">temporal reasoning and sustained attention mechanisms</span> essential for dynamic system observation.
                 </p>
 
                 <h3 class="title is-4" style="margin-top: 1.5rem;">Unlike SWE-Bench, LLM Agents Perform Poorly on DevOps-Gym for Issue Resolving</h3>
                 <p>
-                  The resolve rate drops significantly when moving from Python repositories (SWE-Bench) to Java and Go. Using the same agent and model combination (OpenHands + Claude-4-Sonnet), the resolving rate achieves 70.4% on SWE-Bench-Verified, yet drops dramatically to 23.87% on our benchmark. This indicates that existing LLMs struggle with the cross-language capability gap, likely due to the dominance of Python code in training data. Complex compilation processes, dependency management, and environment configuration in Java and Go pose major challenges that even newer models fail to overcome.
+                  The resolve rate drops significantly when moving from Python repositories (SWE-Bench) to Java and Go. Using the same agent and model combination (OpenHands + Claude-4-Sonnet), the resolving rate achieves <span style="color: #27AE60; font-weight: bold;">70.4% on SWE-Bench-Verified</span>, yet drops dramatically to <span style="color: #E74C3C; font-weight: bold;">23.87% on our benchmark</span>. This indicates that existing LLMs struggle with the <span style="color: #9B59B6; font-weight: bold;">cross-language capability gap</span>, likely due to the <span style="color: #3498DB; font-weight: bold;">dominance of Python code in training data</span>. Complex compilation processes, dependency management, and environment configuration in Java and Go pose major challenges that even newer models fail to overcome.
                 </p>
 
                 <h3 class="title is-4" style="margin-top: 1.5rem;">Generating High-Quality Tests is Even More Challenging Than Resolving Issues</h3>
                 <p>
-                  When using the exact same set of issues for evaluation, the accuracy of generating high-quality tests is notably lower than the issue resolving rate. Test generation requires agents to not only have a static understanding of the repository but also dynamic analysis capabilities to reason about how bugs would be triggered during execution. The agent must also reason about how the bug might be resolved, so that generated tests can both reproduce the failure and validate the patch correctness. In contrast, generating a patch can sometimes be accomplished through more straightforward, static code analysis. These results suggest that while agents are becoming proficient at predicting coding patterns, reasoning about runtime behavior remains significantly more challenging.
+                  When using the exact same set of issues for evaluation, the accuracy of generating high-quality tests is <span style="color: #E74C3C; font-weight: bold;">notably lower than the issue resolving rate</span>. Test generation requires agents to not only have a static understanding of the repository but also <span style="color: #3498DB; font-weight: bold;">dynamic analysis capabilities</span> to reason about how bugs would be triggered during execution. The agent must also reason about how the bug might be resolved, so that generated tests can both reproduce the failure and validate the patch correctness. In contrast, generating a patch can sometimes be accomplished through more straightforward, static code analysis. These results suggest that while agents are becoming proficient at predicting coding patterns, <span style="color: #E74C3C; font-weight: bold;">reasoning about runtime behavior remains significantly more challenging</span>.
                 </p>
               </div>
             </div>
@@ -404,17 +407,17 @@
               <div class="content has-text-justified">
                 <h3 class="title is-4" style="margin-top: 1.5rem;">Build and Configuration Tasks</h3>
                 <ul>
-                  <li><strong>Toolchain and environment limitations (33%):</strong> Agents cannot validate or inspect configuration artifacts due to missing validators or schema checkers. Examples include unused-import violations, missing-dependency errors, and malformed build files.</li>
-                  <li><strong>Multi-step reasoning failures (23%):</strong> Agents often resolve initial errors but lose track of remaining issues, revealing limitations in context retention and iterative "fix-run-verify" loops.</li>
-                  <li><strong>Domain-specific knowledge gaps (37%):</strong> Failures reflect genuine domain knowledge requirements exceeding current capabilities, such as Maven-to-Gradle migrations requiring understanding of build-system semantics, dependency resolution, and platform-specific constraints. Notably, 17% of failures are "inherently difficult," confirming the benchmark captures real-world, high-difficulty scenarios.</li>
+                  <li><strong>Toolchain and environment limitations <span style="color: #E74C3C; font-weight: bold;">(33%)</span>:</strong> Agents cannot validate or inspect configuration artifacts due to missing validators or schema checkers. Examples include unused-import violations, missing-dependency errors, and malformed build files.</li>
+                  <li><strong>Multi-step reasoning failures <span style="color: #E74C3C; font-weight: bold;">(23%)</span>:</strong> Agents often resolve initial errors but lose track of remaining issues, revealing limitations in <span style="color: #3498DB; font-weight: bold;">context retention</span> and iterative <span style="color: #3498DB; font-weight: bold;">"fix-run-verify" loops</span>.</li>
+                  <li><strong>Domain-specific knowledge gaps <span style="color: #E74C3C; font-weight: bold;">(37%)</span>:</strong> Failures reflect genuine domain knowledge requirements exceeding current capabilities, such as <span style="color: #9B59B6; font-weight: bold;">Maven-to-Gradle migrations</span> requiring understanding of build-system semantics, dependency resolution, and platform-specific constraints. Notably, <span style="color: #E67E22; font-weight: bold;">17% of failures are "inherently difficult"</span>, confirming the benchmark captures real-world, high-difficulty scenarios.</li>
                 </ul>
 
                 <h3 class="title is-4" style="margin-top: 1.5rem;">Monitoring Tasks</h3>
                 <ul>
-                  <li><strong>Inadequate methodology (37%):</strong> Agents used one-time commands (e.g., <code>top</code>) instead of continuous monitoring (e.g., <code>watch -n 1</code>).</li>
-                  <li><strong>Premature conclusion (26%):</strong> Agents submitted answers without performing monitoring or completing diagnostic procedures.</li>
-                  <li><strong>Insufficient temporal granularity (11%):</strong> Agents used overly coarse sampling intervals (10-60s), missing transient anomalies like CPU spikes.</li>
-                  <li><strong>Interpretation failure (26%):</strong> Agents collected metrics correctly but failed to analyze them accurately.</li>
+                  <li><strong>Inadequate methodology <span style="color: #E74C3C; font-weight: bold;">(37%)</span>:</strong> Agents used <span style="color: #3498DB; font-weight: bold;">one-time commands</span> (e.g., <code>top</code>) instead of <span style="color: #27AE60; font-weight: bold;">continuous monitoring</span> (e.g., <code>watch -n 1</code>).</li>
+                  <li><strong>Premature conclusion <span style="color: #E74C3C; font-weight: bold;">(26%)</span>:</strong> Agents submitted answers without performing monitoring or completing diagnostic procedures.</li>
+                  <li><strong>Insufficient temporal granularity <span style="color: #E74C3C; font-weight: bold;">(11%)</span>:</strong> Agents used overly coarse sampling intervals <span style="color: #3498DB; font-weight: bold;">(10-60s)</span>, missing <span style="color: #E67E22; font-weight: bold;">transient anomalies like CPU spikes</span>.</li>
+                  <li><strong>Interpretation failure <span style="color: #E74C3C; font-weight: bold;">(26%)</span>:</strong> Agents collected metrics correctly but failed to analyze them accurately.</li>
                 </ul>
               </div>
             </div>

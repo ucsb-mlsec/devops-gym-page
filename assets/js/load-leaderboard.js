@@ -14,7 +14,7 @@ async function loadLeaderboardData() {
       throw new Error("Failed to load results");
     }
     leaderboardData = await response.json();
-    
+
     // Debug: log first result to verify data structure
     if (leaderboardData.level1 && leaderboardData.level1.length > 0) {
       console.log("Sample data:", leaderboardData.level1[0]);
