@@ -28,7 +28,7 @@ async function loadLeaderboardData() {
     ["level1"].forEach((level) => {
       const tbody = document.getElementById(`${level}-tbody`);
       tbody.innerHTML =
-        '<tr><td colspan="6" class="has-text-centered has-text-danger">Failed to load data</td></tr>';
+        '<tr><td colspan="9" class="has-text-centered has-text-danger">Failed to load data</td></tr>';
     });
   }
 }
@@ -45,7 +45,7 @@ function populateTable(level, results) {
 
   if (results.length === 0) {
     tbody.innerHTML =
-      '<tr><td colspan="8" class="has-text-centered">No results available</td></tr>';
+      '<tr><td colspan="9" class="has-text-centered">No results available</td></tr>';
     return;
   }
 
@@ -61,24 +61,27 @@ function populateTable(level, results) {
   if (validResults.length === 0) {
     console.error('No valid results found. Sample result:', results[0]);
     tbody.innerHTML =
-      '<tr><td colspan="8" class="has-text-centered has-text-danger">Invalid data format</td></tr>';
+      '<tr><td colspan="9" class="has-text-centered has-text-danger">Invalid data format</td></tr>';
     return;
   }
 
-  // Calculate overall accuracy for each result and add it to the result object
+  // Calculate average accuracy for each result and add it to the result object
   validResults.forEach(result => {
-    result.overall = (result.build_config + result.monitoring + result.issue_resolving + result.test_generation) / 4;
+    result.avg = (result.build_config + result.monitoring + result.issue_resolving + result.test_generation) / 4;
   });
 
-  // Sort by overall accuracy (descending)
-  validResults.sort((a, b) => b.overall - a.overall);
+  // Sort by average accuracy (descending)
+  validResults.sort((a, b) => b.avg - a.avg);
 
   // Find best results for each category
   const bestBuildConfig = Math.max(...validResults.map(r => r.build_config));
   const bestMonitoring = Math.max(...validResults.map(r => r.monitoring));
   const bestIssueResolving = Math.max(...validResults.map(r => r.issue_resolving));
   const bestTestGeneration = Math.max(...validResults.map(r => r.test_generation));
-  const bestOverall = Math.max(...validResults.map(r => r.overall));
+  const bestAvg = Math.max(...validResults.map(r => r.avg));
+  // Find best end_to_end (excluding null/undefined values)
+  const endToEndValues = validResults.filter(r => typeof r.end_to_end === 'number').map(r => r.end_to_end);
+  const bestEndToEnd = endToEndValues.length > 0 ? Math.max(...endToEndValues) : null;
 
   // Generate table rows - each result gets its own row with rank
   let html = '';
@@ -88,7 +91,8 @@ function populateTable(level, results) {
     const monitoring = Number(result.monitoring).toFixed(2);
     const issueResolving = Number(result.issue_resolving).toFixed(2);
     const testGeneration = Number(result.test_generation).toFixed(2);
-    const overall = Number(result.overall).toFixed(2);
+    const avg = Number(result.avg).toFixed(2);
+    const endToEnd = typeof result.end_to_end === 'number' ? Number(result.end_to_end).toFixed(2) : '-';
 
     // Add medal emoji for top 3
     let rankDisplay = rank;
@@ -103,12 +107,18 @@ function populateTable(level, results) {
     html += '<tr>';
     html += `<td>${rankDisplay}</td>`;
     html += `<td>${result.agent}</td>`;
-    html += `<td>${result.model}</td>`;
+    html += `<td style="border-right: 2px solid #dbdbdb;">${result.model}</td>`;
     html += `<td>${result.build_config === bestBuildConfig ? '<strong>' : ''}${buildConfig}%${result.build_config === bestBuildConfig ? '</strong>' : ''}</td>`;
     html += `<td>${result.monitoring === bestMonitoring ? '<strong>' : ''}${monitoring}%${result.monitoring === bestMonitoring ? '</strong>' : ''}</td>`;
     html += `<td>${result.issue_resolving === bestIssueResolving ? '<strong>' : ''}${issueResolving}%${result.issue_resolving === bestIssueResolving ? '</strong>' : ''}</td>`;
     html += `<td>${result.test_generation === bestTestGeneration ? '<strong>' : ''}${testGeneration}%${result.test_generation === bestTestGeneration ? '</strong>' : ''}</td>`;
-    html += `<td>${result.overall === bestOverall ? '<strong>' : ''}${overall}%${result.overall === bestOverall ? '</strong>' : ''}</td>`;
+    html += `<td>${result.avg === bestAvg ? '<strong>' : ''}${avg}%${result.avg === bestAvg ? '</strong>' : ''}</td>`;
+    // End-to-End column with left border
+    if (endToEnd === '-') {
+      html += `<td style="border-left: 2px solid #dbdbdb;">-</td>`;
+    } else {
+      html += `<td style="border-left: 2px solid #dbdbdb;">${result.end_to_end === bestEndToEnd ? '<strong>' : ''}${endToEnd}%${result.end_to_end === bestEndToEnd ? '</strong>' : ''}</td>`;
+    }
     html += '</tr>';
   });
 

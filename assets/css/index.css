@@ -120,9 +120,7 @@ pre code {
 }
 
 .leaderboard-table {
-  max-height: 400px;
   max-width: 90vw;
-  overflow-y: auto;
   overflow-x: auto;
 }
 

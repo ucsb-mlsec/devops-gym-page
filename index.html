@@ -115,7 +115,8 @@
                     The first end-to-end benchmark for evaluating AI agents across the <span style="color: #FF6B6B; font-weight: bold;">whole DevOps cycle</span>: 
                     build and configuration, monitoring, issue resolving, and test generation. 
                     DevOps-Gym specifically focuses on <span style="color: #FF8C00; font-weight: bold;">long-horizon tool calling</span> and <span style="color: #9B59B6; font-weight: bold;">long context reasoning</span> 
-                    capabilities for <span style="color: #FFA07A; font-weight: bold;">agent tasks</span>, featuring 700+ real-world tasks collected from 30+ projects in Java and Go.
+                    capabilities for <span style="color: #FFA07A; font-weight: bold;">agent tasks</span>, featuring 700+ real-world tasks collected from 30+ projects in Java and Go, 
+                    plus <span style="color: #9B59B6; font-weight: bold;">18 end-to-end pipeline tasks</span> that chain all four stages sequentially.
                   </p>
                 </div>
               </div>
@@ -224,17 +225,18 @@
                   <tr>
                     <th style="vertical-align: middle">Rank</th>
                     <th style="vertical-align: middle">Agent</th>
-                    <th style="vertical-align: middle">Model</th>
+                    <th style="vertical-align: middle; border-right: 2px solid #dbdbdb;">Model</th>
                     <th style="vertical-align: middle">Build & Config (%)</th>
                     <th style="vertical-align: middle">Monitoring (%)</th>
                     <th style="vertical-align: middle">Issue Resolving (%)</th>
                     <th style="vertical-align: middle">Test Generation (%)</th>
-                    <th style="vertical-align: middle">Overall (%)</th>
+                    <th style="vertical-align: middle">Avg (%)</th>
+                    <th style="vertical-align: middle; border-left: 2px solid #dbdbdb;">End-to-End (%)</th>
                   </tr>
                 </thead>
                 <tbody id="level1-tbody">
                   <tr>
-                    <td colspan="8" class="has-text-centered">Loading...</td>
+                    <td colspan="9" class="has-text-centered">Loading...</td>
                   </tr>
                 </tbody>
               </table>
@@ -246,14 +248,15 @@
             style="margin-top: 2rem; font-size: 0.9rem; color: #666">
             <p>
               The leaderboard shows evaluation results on DevOps-Gym for different agent frameworks and LLMs. 
-              Results are sorted by Overall Accuracy (average of the four stages). The best result for each stage is marked in <strong>bold</strong>. <br />
+              Results are sorted by Avg (average of the four stages). The best result for each stage is marked in <strong>bold</strong>. <br />
             </p>
             <p>
               • <strong>Build & Config:</strong> Success rate on build and configuration tasks<br />
               • <strong>Monitoring:</strong> Success rate on monitoring tasks<br />
               • <strong>Issue Resolving:</strong> Success rate on issue resolving tasks<br />
               • <strong>Test Generation:</strong> Success rate on test generation tasks<br />
-              • <strong>Overall:</strong> Average accuracy across all four stages, calculated as (Build & Config + Monitoring + Issue Resolving + Test Generation) / 4<br />
+              • <strong>Avg:</strong> Average accuracy across all four stages, calculated as (Build & Config + Monitoring + Issue Resolving + Test Generation) / 4<br />
+              • <strong>End-to-End:</strong> Success rate on end-to-end pipeline tasks that chain all four stages sequentially. Due to budget constraints, only a subset of agent-model combinations are evaluated; "-" indicates not yet evaluated.<br />
             </p>
           </div>
         </div>
@@ -273,8 +276,8 @@
               DevOps-Gym is the first end-to-end benchmark for evaluating AI agents across the <span style="color: #FF6B6B; font-weight: bold;">whole DevOps cycle</span>: 
               build and configuration, monitoring, issue resolving, and test generation. It specifically focuses on 
               <span style="color: #FF8C00; font-weight: bold;">long-horizon tool calling</span> and <span style="color: #9B59B6; font-weight: bold;">long context reasoning</span> capabilities for 
-              <span style="color: #FFA07A; font-weight: bold;">agent tasks</span>, featuring 700+ real-world tasks collected from 30+ projects in Java and Go, 
-              gathered through a semi-automated mechanism with rigorous expert validation.
+              <span style="color: #FFA07A; font-weight: bold;">agent tasks</span>, featuring 700+ real-world tasks collected from 30+ projects in Java and Go, gathered through a semi-automated mechanism with rigorous expert validation. Additionally, we create <span style="color: #9B59B6; font-weight: bold;">18 end-to-end pipeline tasks</span> that chain all four stages sequentially, testing agents' ability to <span style="color: #FF8C00; font-weight: bold;">maintain context across complete DevOps workflows</span>.
+
             </p>
             <img src="assets/images/overview.png" alt="DevOps-Gym Overview" class="overview-image"
               style="padding-bottom: 1rem" />
@@ -351,6 +354,34 @@
                   <strong>Output:</strong> Regression test that reproduces the described failure and validates patch correctness.<br />
                   <strong>Evaluation:</strong> Generated tests must precisely reproduce the failure described in the issue 
                   and subsequently pass on the patched code.
+                </p>
+
+                <h3 class="title is-4" style="margin-top: 1.5rem;">End-to-End Pipeline Tasks</h3>
+                <p>
+                  Beyond evaluating individual DevOps capabilities, we construct <span style="color: #9B59B6; font-weight: bold;">18 end-to-end pipeline tasks</span> 
+                  that test agents' ability to <span style="color: #FF8C00; font-weight: bold;">maintain context and solve problems across multiple stages</span>. 
+                  These tasks simulate realistic DevOps workflows where problems cascade through the development pipeline.
+                </p>
+                <p>
+                  Each pipeline task follows a <span style="color: #E67E22; font-weight: bold;">four-stage sequence</span>:
+                </p>
+                <ul>
+                  <li><strong>Stage 1 - Build:</strong> Agents diagnose and fix build configuration errors (e.g., missing dependencies, incorrect paths) 
+                    to establish a working baseline.</li>
+                  <li><strong>Stage 2 - Monitoring and Detection:</strong> Agents deploy and monitor the running system to identify 
+                    latent performance or resource issues using system tools, without prior knowledge of the issue type.</li>
+                  <li><strong>Stage 3 - Issue Resolving:</strong> Based on monitoring findings, agents implement code-level fixes 
+                    addressing the root cause.</li>
+                  <li><strong>Stage 4 - Validation and Testing:</strong> Agents rebuild the system with their fix and create regression tests 
+                    that verify the issue is resolved, specifically targeting the performance characteristic identified in Stage 2.</li>
+                </ul>
+                <p>
+                  This pipeline design evaluates critical DevOps competencies absent from isolated task evaluation: 
+                  <span style="color: #E67E22; font-weight: bold;">maintaining problem context across tools</span>, 
+                  <span style="color: #E67E22; font-weight: bold;">propagating diagnostic information between stages</span>, and 
+                  <span style="color: #E67E22; font-weight: bold;">verifying end-to-end solution correctness</span>. 
+                  Success requires completing all four stages sequentially—failure at any point terminates the pipeline, 
+                  reflecting real-world deployment constraints where partial solutions have no value.
                 </p>
               </div>
             </div>
