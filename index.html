@@ -126,7 +126,7 @@
               <div class="publication-links">
                 <!-- Arxiv PDF link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2506.02548" target="_blank"
+                  <a href="https://arxiv.org/abs/2601.20882" target="_blank"
                     class="external-link button is-normal">
                     <span>Paper</span>
                     <span class="icon" style="font-size: 1.2rem">
@@ -137,7 +137,7 @@
 
                 <!-- Github link -->
                 <span class="link-block">
-                  <a href="https://github.com/sunblaze-ucb/cybergym" target="_blank"
+                  <a href="https://github.com/ucsb-mlsec/DevOpsBench.git" target="_blank"
                     class="external-link button is-normal">
                     <span>Code</span>
                     <span class="icon" style="font-size: 1.5rem">
@@ -161,7 +161,7 @@
                   </span> -->
 
                 <!-- Hugging Face link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://huggingface.co/datasets/sunblaze-ucb/cybergym" target="_blank"
                     class="external-link button is-normal">
                     <span>Dataset</span>
@@ -169,7 +169,7 @@
                       <i class="hgi hgi-stroke hgi-database-01"></i>
                     </span>
                   </a>
-                </span>
+                </span> -->
 
               </div>
             </div>
@@ -257,6 +257,7 @@
               • <strong>Test Generation:</strong> Success rate on test generation tasks<br />
               • <strong>Avg:</strong> Average accuracy across all four stages, calculated as (Build & Config + Monitoring + Issue Resolving + Test Generation) / 4<br />
               • <strong>End-to-End:</strong> Success rate on end-to-end pipeline tasks that chain all four stages sequentially. Due to budget constraints, only a subset of agent-model combinations are evaluated; "-" indicates not yet evaluated.<br />
+              • <strong>Submit your results:</strong> Please contact us at <a href="mailto:tangken333@gmail.com">tangken333@gmail.com</a> or <a href="mailto:kaijiezhu@ucsb.edu">kaijiezhu@ucsb.edu</a> to submit your results.
             </p>
           </div>
         </div>
@@ -488,19 +489,17 @@
       <h2 class="title">Citation</h2>
       <p>If you use this work in your research, please cite the following:</p>
       <div class="bibtex-container">
-        <pre class="bibtex"><code id="bibtex-code">@misc{devopsgym2025,
+        <pre class="bibtex"><code id="bibtex-code">@inproceedings{tang2026devopsgym,
       title={DevOps-Gym: Benchmarking AI Agents in Software DevOps Cycle}, 
-      author={[Authors]},
-      year={2025},
-      eprint={[arXiv ID]},
-      archivePrefix={arXiv},
-      primaryClass={cs.SE},
-      url={[arXiv URL]}, 
-}</code></pre>
+      author={Yuheng Tang and Kaijie Zhu and Bonan Ruan and Chuqi Zhang and Michael Yang and Hongwei Li and Suyue Guo and Tianneng Shi and Zekun Li and Christopher Kruegel and Giovanni Vigna and Dawn Song and William Yang Wang and Lun Wang and Yangruibo Ding and Zhenkai Liang and Wenbo Guo},
+      booktitle={The Fourteenth International Conference on Learning Representations},
+      year={2026},
+      url={https://openreview.net/forum?id=bP48r4dt7Z}
+      }</code></pre>
         <button class="copy-bibtex-btn" title="Copy BibTeX" onclick="copyBibtex()">
           <i class="hgi hgi-stroke hgi-copy-01"></i>
         </button>
-        <h2 class="title">More</h2>
+        <!-- <h2 class="title">More</h2>
         <p>
           Please check out more of our works:
           <a href="https://rdi.berkeley.edu/frontier-ai-impact-on-cybersecurity/" target="_blank"
@@ -514,7 +513,7 @@
             Frontier AI Cybersecurity Observatory </a>, a live leaderboard tracking AI's
           cybersecurity capabilities
           across attack and defense tasks.
-        </p>
+        </p> -->
       </div>
     </div>
   </section>
