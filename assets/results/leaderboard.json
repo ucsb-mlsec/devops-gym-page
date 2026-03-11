@@ -10,6 +10,15 @@
       "end_to_end": "--"
     },
     {
+      "agent": "SageAgent",
+      "model": "GPT-5.3-Codex",
+      "build_config": 81.82,
+      "monitoring": 35.29,
+      "issue_resolving": 32.14,
+      "test_generation": 37.99,
+      "end_to_end": 17.65
+    },
+    {
       "agent": "OpenHands",
       "model": "o4-mini",
       "build_config": 24.07,
